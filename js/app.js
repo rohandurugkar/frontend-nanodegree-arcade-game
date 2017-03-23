@@ -43,6 +43,7 @@ Player.prototype.handleInput = function(input) {
     this.x += 100;
   } else if(input == 'up' && this.y === 20){
     this.y = 420;
+    alert("You won!"); 
   } else if(input == 'down' && this.y < 420) {
     this.y += 100;
   } else if(input == 'up') {
@@ -55,6 +56,7 @@ Player.prototype.handleInput = function(input) {
 };
 
 Player.prototype.collision = function() {
+
   this.x = 200;
   this.y = 420;
 };
